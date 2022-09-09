@@ -3,10 +3,25 @@
 ////////////////////////
 function vklassOpen() {
     window.open("https://auth.vklass.se/saml/initiate?idp=http://fs.lund.se/adfs/services/trust&org=60");
-  }
+}
+  
 
-function schemaOpen() {
-    window.open("https://web.skola24.se/timetable/timetable-viewer/lund.skola24.se/Polhemskolan/")
+function toggleSchema(){
+    iframeClose = document.getElementById("schemaIframe").style.display;
+    if (iframeClose == "block") {
+        return close();
+    }
+    return open();
+}
+
+function open() {
+    document.getElementById("schemaIframe")
+        .style.display = "block";
+}
+
+function close() {
+     document.getElementById("schemaIframe")
+        .style.display = "none";
 }
 
 function lunchOpen() {
