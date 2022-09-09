@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Morgan Hodder</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbarBtn">
+            <div id="centerBtn">
+                <button type="button" id="btnVklass" onclick="vklassOpen()">
+                    <i id="VklassIcon" class="material-icons">school</i>
+                    VKLASS
+                </button>
+                <button type="button" id="btnSchema" onclick="schemaOpen()">
+                    <i id="SchemaIcon" class="material-icons">web</i>
+                    SCHEMA
+                </button>
+                <button type="button" id="btnLunch" onclick="lunchOpen()">
+                    <i id="LunchIcon" class="material-icons">room_service</i>
+                    LUNCH
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="schemaIframe">
+        <iframe height="500px" width="100%" frameborder="0" scrolling="auto" allowfullscreen
+        src="https://web.skola24.se/timetable/timetable-viewer/lund.skola24.se/Polhemskolan/">
+        </iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
