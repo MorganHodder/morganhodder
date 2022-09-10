@@ -5,7 +5,6 @@ function vklassWindow() {
     window.open("https://auth.vklass.se/saml/initiate?idp=http://fs.lund.se/adfs/services/trust&org=60");
 }
   
-
 function toggleSchema(){
     iframeClose = document.getElementById("schemaIframe").style.display;
     if (iframeClose == "block") {
@@ -27,3 +26,13 @@ function closeSchema() {
 function lunchWindow() {
     window.open("https://skolmaten.se/polhemsskolan2/")
 }
+
+var element_pos = 0;    // Position of the newly created elements.
+var iCnt = 0;
+
+$(document).ready(function() {
+
+    $(function() { $("#schemaIframe").draggable({ containment: "window" }); });
+
+        iCnt = iCnt + 1;
+});
