@@ -68,9 +68,8 @@ body {
   margin-top: auto;
   float: left;
   width: 35%;
-  box-shadow: -8px 8px 12px #111827;
+  box-shadow: 8px 8px 12px #111827;
   cursor: move;
   background-color: #374151;
   height: 470px;
-  background: #FFFFFF;
 }
