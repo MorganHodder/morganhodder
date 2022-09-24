@@ -1,15 +1,13 @@
 body {
   background-color: #374151;
-  margin:0 auto;
 }
 
-#btnVklass, #btnSchema, #btnLunch {
+#btnVklass, #btnSchema, #btnLunch, #weekNmbr, #vecka {
   background-color: #374151;
   border: 1px solid transparent;
   border-radius: .75rem;
   box-sizing: border-box;
   color: #FFFFFF;
-  cursor: pointer;
   flex: 0 0 auto;
   font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-size: 1.125rem;
@@ -30,6 +28,7 @@ body {
 
 #btnVklass:hover, #btnSchema:hover, #btnLunch:hover {
   background-color: #111827;
+  cursor: pointer;
 }
 
 #btnVklass:focus, #btnSchema:focus, #btnLunch:focus {
@@ -61,5 +60,17 @@ body {
   box-shadow: -8px 8px 12px #111827;
   cursor: move;
   background-color: #374151;
-  height: 570px;
+  height: 470px;
+}
+
+#lunchIframe {
+  display: none;
+  margin-top: auto;
+  float: left;
+  width: 35%;
+  box-shadow: -8px 8px 12px #111827;
+  cursor: move;
+  background-color: #374151;
+  height: 470px;
+  background: #FFFFFF;
 }
