@@ -44,13 +44,13 @@ function closeLunch() {
 
 $(document).ready(function() {
 
-    $(function() { $("#schemaIframe").draggable({ containment: "window" }); });
+    $(function() { $("#schemaIframe").draggable({ containment: "window" }).resizeable(); });
 
 });
 
 $(document).ready(function() {
 
-    $(function() { $("#lunchIframe").draggable({ containment: "window" }); });
+    $(function() { $("#lunchIframe").draggable({ containment: "window" }).resizeable(); });
 
 });
 
